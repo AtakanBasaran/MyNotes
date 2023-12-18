@@ -83,6 +83,7 @@ class CategoryViewController: SwipeTableViewController {
         let blueNo = CGFloat(categoryArray?[indexPath.row].blueNo ?? 0.4)
         let randomColor = UIColor(red: redNo, green: greenNo, blue: blueNo, alpha: 1)
         
+        cell.accessoryType = .disclosureIndicator
         cell.backgroundColor = randomColor //Random color for every cell
         //Since I used default values for categoryArray with ??, I did not need to add above code in the if let
         if let category = categoryArray?[indexPath.row] {
